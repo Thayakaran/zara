@@ -30,3 +30,7 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 package-lock.json
+
+.classpath
+.project
+.settings
