@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="production/images/favicon.png" type="image/ico" />
 
-    <title>IMS | Registration</title>
+    <title>ZARA | Registration</title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,32 +35,99 @@
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
-                <form>
-                    <h1>User Registration</h1>
-                    <div>
-                        <input type="text" class="form-control" placeholder="username" id='username' required="" />
-                    </div>
-                    <div class="flat">
-                        <span style="float: left; margin-left: 20px; margin-bottom: 20px;"><input id="opst" type="radio" name="user" value="student" class="flat"> Student</span>
-                        <span style="margin-bottom: 20px;"><input id="opco" type="radio" name="user" value="company" class="flat"> Company</span>
-                        <span style="margin-bottom: 20px; margin-left: 20px;"><input id="opex" type="radio" name="user" value="examiner" class="flat"> Examiner</span>
-                        <span style="float: right; margin-right: 20px; margin-bottom: 20px;"><input id="opitm" type="radio" name="user" value="itm" class="flat">ITM</span>
-                    </div>
-                    <br>
-                    <div>
-                        <input type="text" class="form-control" placeholder="email" id='email' required="" />
-                    </div>
-                    <div>
-                        <input type="password" class="form-control" placeholder="Password" id='password' required="" />
-                    </div>
-                    <div>
-                        <a class="btn btn-default submit"  id="register" >Sign UP</a>
+            
+                <div class="x_content">
+                        <br />
+                        <form  class="form-horizontal form-label-left input_mask" >
 
+                                <h1>Register with ZARA</h1>
+                                <h4>Account Details</h4>
+    
+                          
+                                <div class="form-group">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                            <input type="text" required="required" class="form-control has-feedback-left" id="email" placeholder="Email">
+                                            <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group" style ="margin-bottom:2px">
+                                            <h8>(Password Maximum 6 Character with number)</h8>
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                    
+                                                <input type="password" required="required" class="form-control has-feedback-left" id="password" placeholder="Password">
+                                                <span class="fa fa-lock form-control-feedback left" aria-hidden="true"></span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+    
+                                        <h4>Contact Details</h4>
+
+                                        <div class="flat">
+                                                <span style="float: left; margin-left: 20px; margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Personal" class="flat"> Personal</span>
+                                                <span style="margin-bottom: 2px;"><input id="opco" type="radio" name="user" value="Busines" class="flat"> Busines</span>
+                                                
+                                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" required="required" class="form-control has-feedback-left" id="name" placeholder="Name">
+                                    <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" required="required" class="form-control has-feedback-left" id="address" placeholder=" Address">
+                                    <span class="fa fa-home form-control-feedback left" aria-hidden="true"></span>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <select class="form-control has-feedback-left" id="country" required="required">
+                                        <option value="">Select Country</option>
+                                        <option value="SriLanka">Sri Lanka</option>
+                                        <option value="India">India</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="America">America</option>
+                                        <option value="Swiss">Swiss</option>
+                                        <option value="Germany">Germany</option>
+                                    </select>
+                                    <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true"></span>
+                                </div>
+
+                               
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="email" required="required" class="form-control has-feedback-left" id="zip" placeholder="Zip Cord">
+                                    <span class="fa fa-flag form-control-feedback left" aria-hidden="true"></span>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                    <input type="text" class="form-control has-feedback-left" id="phone"  placeholder="Phone">
+                                    <span class="fa fa-mobile form-control-feedback left" aria-hidden="true"></span>
+                                </div>
+                            </div>
+    
+                            <div class="ln_solid"></div>
+    
+                            <div class="form-group">
+                                <div  class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                    <button style=" width: 100px" class="btn btn-primary" type="reset">Reset</button>
+                                </div>
+    
+                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                    <button style=" width: 150px"  type="submit" class="btn btn-success">Create Account</button>
+                                </div>
+                            </div>
+    
+                        </form>
                     </div>
-
-                    <div class="clearfix"></div>
-
-                </form>
+                </div>
+            </div>
 
             </section>
         </div>
