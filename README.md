@@ -1,8 +1,8 @@
 # <div align="center"><h1>Zara</h1> </div>
 ### Technologies
 ```sh
-    Front-End         : HTML5, Bootstrap Library, JQuery Library
-	  Version Controll	: github
+	Front-End        : HTML5, Bootstrap Library, JQuery Library
+	Version Controll : github
 ```
 
 
