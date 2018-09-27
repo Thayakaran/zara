@@ -2,9 +2,9 @@
 
 const express = require('express');
 var Cors		= require('cors');
-const configs = require('./backend/Configs/configs');
 const cors = require('cors');
 
+var port = 3000;
 
 
 const app = express();
@@ -19,11 +19,11 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname+'/index.html');
 });
 
-app.listen(configs.port, function (err) {
+app.listen(port, function (err) {
     if (err) {
         console.error(err);
         return;
     }
 
-    console.log('Listening on port '+configs.port);
+    console.log('Listening on port '+port);
 });

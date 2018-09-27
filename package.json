@@ -1,28 +1,28 @@
 {
   "name": "ims",
   "version": "1.0.0",
-  "description": "<div align=\"center\"><h1>Internship Management System</h1> </div>\r <hr>",
+  "description": "<div align=\"center\"><h1>Zara</h1> </div>\r <hr>",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "devServer": "webpack-dev-server --mode development",
-    "build": "webpack --mode development"
+    "dev": "nodemon --watch src server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thayakaran/IMS.git"
+    "url": "git+https://github.com/Thayakaran/zara.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Thayakaran/IMS/issues"
+    "url": "https://github.com/Thayakaran/zara/issues"
   },
-  "homepage": "https://github.com/Thayakaran/IMS#readme",
+  "homepage": "https://github.com/Thayakaran/zara#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.4",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
