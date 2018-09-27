@@ -1,4 +1,4 @@
-<div align="center"><h1><b>Zara</b></h1> </div>
+# <div align="center"><h1>Zara</h1> </div>
 ### Technologies
 ```sh
     Front-End         : HTML5, Bootstrap Library, JQuery Library
