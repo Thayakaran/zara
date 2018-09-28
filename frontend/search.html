@@ -60,26 +60,12 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <h3>Categories</h3>
-                        <ul class="nav side-menu">
-                            <li><a href="http://www.google.com"><i class="fa fa-circle"></i> POPULAR <span class="fa fa-chevron-right"></span></a></li>
+                        <ul class="nav side-menu">                            
                             <li><a><i class="fa fa-circle"></i> WOMAN <span class="fa fa-chevron-right"></span></a></li>
                             <li><a><i class="fa fa-circle"></i> TRF <span class="fa fa-chevron-right"></span></a></li>
                             <li><a><i class="fa fa-circle"></i> MAN <span class="fa fa-chevron-right"></span></a></li>
                             <li><a><i class="fa fa-circle"></i> KIDS <span class="fa fa-chevron-right"></span></a></li>
                             <li><a><i class="fa fa-circle"></i> SALE <span class="fa fa-chevron-right"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_section">
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-circle"></i>JOIN</a>
-                                <ul class="nav child_menu">
-                                    <li><a href="e_commerce.html">E-commerce</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="project_detail.html">Project Detail</a></li>
-                                    <li><a href="contacts.html">Contacts</a></li>
-                                    <li><a href="profile.html">Profile</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
 
@@ -219,177 +205,27 @@
               
               <div class="col-md-10 col-sm-10 col-xs-12 form-group top_search">
                 <div class="input-group" >
-                  <input style=" height: 70px; width: 950px; font-size:40px;" type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn"><button style=" height: 70px; width: 100px; font-size:40px;" class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
+                  <input style=" height: 70px; width: 950px; font-size:40px;" type="text" id="searchTxt" class="form-control" placeholder="Search for..." autofocus>
+                  <span class="input-group-btn"><button style=" height: 70px; width: 100px; font-size:40px;" class="btn btn-default" type="button" id="searchBtn"><span class="fa fa-search"></span></button></span>
                 </div>
               </div>
               <div class="col-md-2 col-sm-2 col-xs-12">
-                  <button style=" height: 70px; width: 200px; font-size:30px;" type="button" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
+                  <button style=" height: 70px; width: 200px; font-size:30px;" type="button" id="filterBtn" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
               </div>
             </div>
             <!-- /searchand filter -->            
 
             <div class="row">
-                <div class="col-md-12">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h2>Search Results</h2>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="x_content">
-
-                            <div class="row">
-
-                                <!-- <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/woman1.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/woman2.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/woman3.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/woman4.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/man1.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-55">
-                                    <a href="http://www.google.com">
-                                        <div class="thumbnail">
-                                            <div class="image view view-first">
-                                                <img style="width: 100%; display: block;" src="/frontend/production/images/man2.jpg" alt="image" />
-                                                <div class="mask">
-                                                    <p>Modern outerwear</p>
-                                                    <div class="tools tools-bottom">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-half-empty"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="caption">
-                                                New Summer Fit<br />
-                                                <b>12.45 $</b><br />
-                                                Flat 15%
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div> -->
-
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12" id="filter">
+                    <!-- // for filter options -->
                 </div>
             </div>
+
+            <div class="row">
+                    <div class="col-md-12" id="searchResults">
+                        <!-- // for search results -->
+                    </div>
+                </div>
         </div>
         <!-- /page content -->
 
@@ -444,6 +280,8 @@
 
 <!-- Custom Theme Scripts -->
 <script src="/frontend/build/js/custom.min.js"></script>
+
+<script src="/frontend/build/js/search.js"></script>
 
 </body>
 </html>
