@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/frontend/production/images/favicon.ico" type="image/ico" />
+    <link rel="icon" href="/frontend/build/images/favicon.ico" type="image/ico" />
 
     <title>Z A R A  | </title>
 
@@ -140,7 +140,7 @@
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/frontend/production/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -152,7 +152,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/frontend/production/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -164,7 +164,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/frontend/production/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -176,7 +176,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="/frontend/production/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
                                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -216,38 +216,31 @@
 
             <!-- /searchand filter -->
             <div class="page-title">
-              <div class="col-md-8 col-sm-8 col-xs-12">
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-12 form-group top_search">
-                <div onclick="location.href='/frontend/search.html'" class="input-group" id="searchcomponent">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
+              
+              <div class="col-md-10 col-sm-10 col-xs-12 form-group top_search">
+                <div class="input-group" >
+                  <input style=" height: 70px; width: 950px; font-size:40px;" type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn"><button style=" height: 70px; width: 100px; font-size:40px;" class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
                 </div>
               </div>
-              <div class="col-md-1 col-sm-1 col-xs-12">
-                  <button type="button" class="btn btn-round btn-default" id="filterBtn"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
+              <div class="col-md-2 col-sm-2 col-xs-12">
+                  <button style=" height: 70px; width: 200px; font-size:30px;" type="button" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
               </div>
             </div>
-            <!-- /searchand filter -->
-
-            <!-- /div for loding filter menu -->
-            <div class="row" id="filterDiv">
-
-            </div>  
-            <!-- /div for loding filter menu -->          
+            <!-- /searchand filter -->            
 
             <div class="row">
                 <div class="col-md-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Popular Items <small> Popular items sorted for you </small></h2>
+                            <h2>Search Results</h2>
                             <div class="clearfix"></div>
                         </div>
                         <div class="x_content">
 
                             <div class="row">
 
-                                <div class="col-md-55">
+                                <!-- <div class="col-md-55">
                                     <a href="http://www.google.com">
                                         <div class="thumbnail">
                                             <div class="image view view-first">
@@ -390,7 +383,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -451,10 +444,6 @@
 
 <!-- Custom Theme Scripts -->
 <script src="/frontend/build/js/custom.min.js"></script>
-
-<!-- /home script -->
-<script src="/frontend/build/js/home.js"></script>
-
 
 </body>
 </html>

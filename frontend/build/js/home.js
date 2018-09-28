@@ -1,16 +1,16 @@
 $(document).ready(function(){
-    var username = localStorage.getItem('name');
-    document.getElementById("userwelcome").innerHTML = username;
-    document.getElementById("username").innerHTML = username;
+    // var username = localStorage.getItem('name');
+    // document.getElementById("userwelcome").innerHTML = username;
+    // document.getElementById("username").innerHTML = username;
 
     $("#logout1, #logout2").click(function () {
         localStorage.clear();
         location.href = "/";
       });
-    //form 1
-    $('.form_I_1').click(function () {
-        $("#forms").load('form1.html', function() {
-            $.getScript('/build/js/form1.js');
+    //filter
+    $('#filterBtn').click(function () {
+        $("#filterDiv").load('/frontend/filter.html', function() {
+            $.getScript('frontend/build/js/filter.js');
         });
       });
 
