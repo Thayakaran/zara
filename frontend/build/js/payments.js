@@ -7,7 +7,10 @@ $(document).ready(function() {
         if (this.value == 'None') {
             $('#bank').hide();
             $('#account').hide();
-        } else if(this.value == 'Paypal/Runpay') {
+        } else if(this.value == 'Paypal') {
+            $('#bank').hide();
+            $('#account').show();
+        }  else if(this.value == 'Runpay') {
             $('#bank').hide();
             $('#account').show();
         } else {
@@ -18,8 +21,18 @@ $(document).ready(function() {
     });
 
     $('#change').click(function() {
-        $('#change').html('Save');
+        if ($('#change').text() == 'Change') {
+
+            $('#change').html('Save');
         $('#cusaddress *').children().prop("disabled", false);
+
+        } else {
+
+            $('#change').html('Change');
+        $('#cusaddress *').children().prop("disabled", true);
+
+        }
+        
     })
 
     $('#method').change(function() {
@@ -29,6 +42,19 @@ $(document).ready(function() {
             document.getElementById('location').disabled = true;
         } else {
             document.getElementById('location').disabled = false;
+        }
+
+    });
+
+    $('#location').change(function() {
+        if (this.value == 'None') {
+            $('#saddress').html('20/15 kothalawa Lane, New kandy road, Kaduwella 6000 Srilanka.');
+        } else if(this.value == 'Jaffna') {
+            $('#saddress').html('200/105 nathan lane, New kandy road, Jaffna 40000 Srilanka.');
+        }  else if(this.value == 'Mannar') {
+            $('#saddress').html('13/B Marana lane, Vavunya road, Mannar 40005 Srilanka.');
+        } else {
+            
         }
 
     });
