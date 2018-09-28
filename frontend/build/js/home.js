@@ -1,5 +1,33 @@
 $(document).ready(function(){
 
+    if(!localStorage.getItem('token')){
+        var x = document.getElementById("myDIV1");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    else{
+        var x = document.getElementById("myDIV2");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    var username = localStorage.getItem('username');
+    document.getElementById("userwelcome").innerHTML = username;
+    document.getElementById("username").innerHTML = username;
+
+    $("#logout1, #logout2").click(function () {
+        localStorage.clear();
+        location.href = "/frontend/login.html";
+    });
+
+       
+
     $('#category-view').load('/frontend/popularCategory.html');
 
     // var username = localStorage.getItem('name');
