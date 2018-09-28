@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/frontend/build/images/favicon.ico" type="image/ico" />
+    <link rel="icon" href="/frontend/production/images/favicon.ico" type="image/ico" />
 
     <title>Z A R A  | </title>
 
@@ -147,9 +147,34 @@
             </div>
             <!-- /top tiles -->
 
+            <!-- /searchand filter -->
+            <div class="page-title">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-12 form-group top_search">
+                <div onclick="location.href='/frontend/search.html'" class="input-group" id="searchcomponent">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-12">
+                  <button type="button" class="btn btn-round btn-default" id="filterBtn"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
+              </div>
+            </div>
+            <!-- /searchand filter -->
+
+            <!-- /div for loding filter menu -->
+            <div class="row" id="filterDiv">
+
+            </div>  
+            <!-- /div for loding filter menu -->
+
+            <!-- /div for loding page contents -->
             <div class="row"   id="category-view">
                 <!-- Content will load here -->
             </div>
+            <!-- /div for loding page contents -->
+            
         </div>
         <!-- /page content -->
 
