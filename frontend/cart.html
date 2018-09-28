@@ -35,11 +35,6 @@
     <div class="main_container">
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
-                <div class="navbar nav_title" style="border: 0;">
-                    <br />
-                    <a class="site_title"><center><span><h3>Z   A   R   A</h3></span></center></a>
-                </div>
-
                 <div class="clearfix"></div>
 
                 <!-- menu profile quick info -->
@@ -128,8 +123,7 @@
                         </li>
 
                         <li role="presentation" class="dropdown" id="myDIV3">
-                            <a href="frontend/cart.html">
-
+                            <a href="#">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span class="badge bg-green">3</span>
                             </a>
@@ -146,42 +140,114 @@
             <div class="row tile_count">
                 <div class="x_content">
                     <center>
-                        <img style="width: 30%; display: block;" src="/frontend/production/images/zara_logo.png" alt="image" />
+                        <h3>Items In Your Cart</h3>
                     </center>
                 </div>
             </div>
+			<div class="table-responsive">
+                      <table class="table table-striped jambo_table">
+                        <thead>
+                          <tr class="headings">
+                            <th>
+                            </th>
+                            <th class="column-title"></th>
+                            <th class="column-title">Name</th>
+                            <th class="column-title">Delivery Address </th>
+                            <th class="column-title">Quantity </th>
+                            <th class="column-title">Price(LKR)</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="even pointer">
+                            <td class="a-center ">
+                              <a href="#"><i type="submit" style="color:red;font-size:2em" class="fa fa-close" name="table_records"> </i></a>
+                            </td>
+                            <td class=" "><img src="production/images/tshirt.png" width="100em" height="100em"></img></td>
+                            <td class=" "><a href="#">T-Shirt Mens'(XL)</a></td>
+                            <td class=" ">
+							<select class="form-control" required>
+								<option value="">123, Main Road, Malabe</option>
+								<option value="">321, Cross Road, Colombo</option>
+								<option value="">456, Jeya Street, Colombo</option>
+							</select>
+							
+							</td>
+                            <td class=" "><input type="number" value="1" class="form-control" name="quantity" min="1" max="99"></td>
+                            <td class=" "><span style="font-weight:bold;font-size:2em; float:right">900.00</span></td>
+                          </tr>
+                          
+						  <tr class="even pointer">
+                            <td class="a-center ">
+                              <a href="#"><i type="submit" style="color:red;font-size:2em" class="fa fa-close" name="table_records"> </i></a>
+                            </td>
+                            <td class=" "><img src="production/images/shirt.png" width="100em" height="100em"></img></td>
+                            <td class=" ">Shirt Mens'(XL)</td>
+                            <td class=" ">
+							<select class="form-control" required>
+								<option value="">456, Jeya Street, Colombo</option>
+								<option value="">123, Main Road, Malabe</option>
+								<option value="">321, Cross Road, Colombo</option>
+							</select>
+							
+							</td>
+                            <td class=" "><input type="number" class="form-control" value="1" name="quantity" min="1" max="99"></td>
+                            <td class=" "><span style="font-weight:bold;font-size:2em; float:right">1500.00</span></td>
+                          </tr>
+						  
+						  <tr class="even pointer">
+                            <td class="a-center ">
+                              <a href="#"><i type="submit" style="color:red;font-size:2em" class="fa fa-close" name="table_records"> </i></a>
+                            </td>
+                            <td class=" "><img src="production/images/frock.png" width="100em" height="100em"></img></td>
+                            <td class=" ">Frock Children's (Small)</td>
+                            <td class=" ">
+							<select class="form-control" required>
+								<option value="">123, Main Road, Malabe</option>
+								<option value="">321, Cross Road, Colombo</option>
+								<option value="">456, Jeya Street, Colombo</option>
+							</select>
+							
+							</td>
+                            <td class=" "><input type="number" class="form-control" value="1" name="quantity" min="1" max="99"></td>
+                            <td class=" "><span style="font-weight:bold;font-size:2em; float:right">500.00</span></td>
+                          </tr>
+						  
+
+						  
+                        </tbody>
+                      </table>
+					  <div style="float:right;font-weight:bold;font-size:2em; float:right">
+					  <table>
+					  <tr>
+						<td>Total Amount&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+						<td style="float:right" id="from">2900.00</td>
+					  </tr>
+					  <tr>
+						<td>Discount&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+						<td style="float:right" id="to">0.00</td>
+					  </tr>
+					  <tr>
+						<td>Final Amount&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td>&nbsp;&nbsp;:&nbsp;&nbsp;</td>
+						<td id="result" style="float:right">2900.00</td>
+					  </tr>
+					  </table>
+					  <br>
+					  <a href="paymenthome.html"><input style="float:right" type="submit" value="CHECKOUT" class="btn btn-success" /></a>
+					  </div>
+					  <input style="float:left" type="submit" value="Have Coupon Code?" class="btn btn-primary" onclick="update();" />
+					  
+					 </div>
             <!-- /top tiles -->
-
-            <!-- /searchand filter -->
-            <div class="page-title">
-              <div class="col-md-8 col-sm-8 col-xs-12">
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-12 form-group top_search">
-                <div onclick="location.href='/frontend/search.html'" class="input-group" id="searchcomponent">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
-                </div>
-              </div>
-              <div class="col-md-1 col-sm-1 col-xs-12">
-                  <button type="button" class="btn btn-round btn-default" id="filterBtn"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
-              </div>
-            </div>
-            <!-- /searchand filter -->
-
-            <!-- /div for loding filter menu -->
-            <div class="row" id="filterDiv">
-
-            </div>  
-            <!-- /div for loding filter menu -->
-
-            <!-- /div for loding page contents -->
-            <div class="row"   id="category-view">
-                <!-- Content will load here -->
-            </div>
             <!-- /div for loding page contents -->
             
         </div>
+		
         <!-- /page content -->
+		
 
         <!-- footer content -->
         <footer>
@@ -192,10 +258,39 @@
         </footer>
         <!-- /footer content -->
     </div>
+	<script>
+	function update(){
+		swal.mixin({
+		  input: 'text',
+		  confirmButtonText: 'Submit &rarr;',
+		  showCancelButton: true,
+		}).queue([
+		  {
+			title: 'Enter Your Coupon Code'
+			}
+		]).then((result) => {
+		  if (result.value) {
+			discount();
+			swal({
+			  type: 'success',
+			  title: 'Congrats!',
+			  text: 'You Got 10% Discount',
+			})
+		  }
+		})
+
+	}
+	function discount(){
+		document.getElementById('to').innerHTML = "290.00";
+		document.getElementById('result').innerHTML = "2610.00";
+	}
+	</script>
 </div>
 
 <!-- jQuery -->
 <script src="/frontend/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Sweet Alert 2-->
+<script src="production/js/sweetalert2.all.min.js"></script>
 <!-- Bootstrap -->
 <script src="/frontend/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->

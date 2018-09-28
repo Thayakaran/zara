@@ -13,12 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/frontend', express.static('frontend'));
 
-
-
-
-
-
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
     res.sendFile(__dirname+'/frontend/home.html');
 });
 
