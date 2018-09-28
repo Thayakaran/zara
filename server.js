@@ -15,9 +15,14 @@ app.use('/frontend', express.static('frontend'));
 
 
 
+
+
+
 app.get('/', function(req, res) {
     res.sendFile(__dirname+'/frontend/home.html');
 });
+
+
 
 app.listen(port, function (err) {
     if (err) {
