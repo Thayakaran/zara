@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/frontend/production/images/favicon.ico" type="image/ico" />
+    <link rel="icon" href="/frontend/build/images/favicon.ico" type="image/ico" />
 
     <title>Z A R A  | </title>
 
@@ -60,17 +60,12 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <h3>Categories</h3>
-                        <ul class="nav side-menu">
-                            <li id="popular-category"><a><i class="fa fa-angle-double-up"></i> POPULAR <span class="fa fa-chevron-right"></span></a></li>
-                            <li id="woman-category"><a><i class="fa fa-female"></i> WOMAN <span class="fa fa-chevron-right"></span></a></li>
-                            <li id="man-category"><a><i class="fa fa-male"></i> MAN <span class="fa fa-chevron-right"></span></a></li>
-                            <li id="kids-category"><a><i class="fa fa-child"></i> KIDS <span class="fa fa-chevron-right"></span></a></li>
-                            <li id="sale-category"><a><i class="fa fa-bolt"></i> SALE <span class="fa fa-chevron-right"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="menu_section">
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-sign-in"></i>JOIN</a></li>
+                        <ul class="nav side-menu">                            
+                            <li><a><i class="fa fa-circle"></i> WOMAN <span class="fa fa-chevron-right"></span></a></li>
+                            <li><a><i class="fa fa-circle"></i> TRF <span class="fa fa-chevron-right"></span></a></li>
+                            <li><a><i class="fa fa-circle"></i> MAN <span class="fa fa-chevron-right"></span></a></li>
+                            <li><a><i class="fa fa-circle"></i> KIDS <span class="fa fa-chevron-right"></span></a></li>
+                            <li><a><i class="fa fa-circle"></i> SALE <span class="fa fa-chevron-right"></span></a></li>
                         </ul>
                     </div>
 
@@ -124,10 +119,68 @@
                         </li>
 
                         <li role="presentation" class="dropdown">
-                            <a href="" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span class="badge bg-green">6</span>
                             </a>
+                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="image"><img src="/frontend/build/images/img.jpg" alt="Profile Image" /></span>
+                                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="text-center">
+                                        <a>
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -149,32 +202,30 @@
 
             <!-- /searchand filter -->
             <div class="page-title">
-              <div class="col-md-8 col-sm-8 col-xs-12">
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-12 form-group top_search">
-                <div onclick="location.href='/frontend/search.html'" class="input-group" id="searchcomponent">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn"><button class="btn btn-default" type="button"><span class="fa fa-search"></span></button></span>
+              
+              <div class="col-md-10 col-sm-10 col-xs-12 form-group top_search">
+                <div class="input-group" >
+                  <input style=" height: 70px; width: 950px; font-size:40px;" type="text" id="searchTxt" class="form-control" placeholder="Search for..." autofocus>
+                  <span class="input-group-btn"><button style=" height: 70px; width: 100px; font-size:40px;" class="btn btn-default" type="button" id="searchBtn"><span class="fa fa-search"></span></button></span>
                 </div>
               </div>
-              <div class="col-md-1 col-sm-1 col-xs-12">
-                  <button type="button" class="btn btn-round btn-default" id="filterBtn"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
+              <div class="col-md-2 col-sm-2 col-xs-12">
+                  <button style=" height: 70px; width: 200px; font-size:30px;" type="button" id="filterBtn" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
               </div>
             </div>
-            <!-- /searchand filter -->
+            <!-- /searchand filter -->            
 
-            <!-- /div for loding filter menu -->
-            <div class="row" id="filterDiv">
-
-            </div>  
-            <!-- /div for loding filter menu -->
-
-            <!-- /div for loding page contents -->
-            <div class="row"   id="category-view">
-                <!-- Content will load here -->
+            <div class="row">
+                <div class="col-md-12" id="filter">
+                    <!-- // for filter options -->
+                </div>
             </div>
-            <!-- /div for loding page contents -->
-            
+
+            <div class="row">
+                    <div class="col-md-12" id="searchResults">
+                        <!-- // for search results -->
+                    </div>
+                </div>
         </div>
         <!-- /page content -->
 
@@ -230,7 +281,7 @@
 <!-- Custom Theme Scripts -->
 <script src="/frontend/build/js/custom.min.js"></script>
 
-<!-- Page Scripts -->
-<script src="/frontend/build/js/home.js"></script>
+<script src="/frontend/build/js/search.js"></script>
+
 </body>
 </html>
