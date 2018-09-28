@@ -48,13 +48,13 @@ $(document).ready(function() {
 
     $('#location').change(function() {
         if (this.value == 'None') {
-            $('#saddress').html('20/15 kothalawa Lane, New kandy road, Kaduwella 6000 Srilanka.');
+            document.getElementById('saddress').value='20/15 kothalawa Lane, New kandy road, Kaduwella 6000 Srilanka.';
         } else if(this.value == 'Jaffna') {
-            $('#saddress').html('200/105 nathan lane, New kandy road, Jaffna 40000 Srilanka.');
+            document.getElementById('saddress').value= '200/105 nathan lane, New kandy road, Jaffna 40000 Srilanka.';
         }  else if(this.value == 'Mannar') {
-            $('#saddress').html('13/B Marana lane, Vavunya road, Mannar 40005 Srilanka.');
+            document.getElementById('saddress').value='13/B Marana lane, Vavunya road, Mannar 40005 Srilanka.';
         } else {
-            
+            document.getElementById('saddress').value='20/15 kothalawa Lane, New kandy road, Kaduwella 6000 Srilanka.';
         }
 
     });
