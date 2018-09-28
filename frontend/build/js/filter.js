@@ -1,12 +1,18 @@
 $(document).ready(function(){
-    $("#logout1, #logout2").click(function () {
-        localStorage.clear();
-        location.href = "/";
-      });
-    //filter
-    $('#filterBtn').click(function () {
-        $("#filterDiv").load('/frontend/filter.html', function() {
-            $.getScript('/frontend/build/js/filter.js');
-        });
-      });
+    // var allInputs = $( ":input" );
+
+    // for(var i = 0; i < allInputs.length; i++) {
+
+    // if( $( 'input[type="checkbox"]:checked' ) )
+    //     $( this ).prop('checked', false);
+    // }
+
+    // $("#reset").click(function(event) {
+    //     $( 'input[type="checkbox"]' ).prop('checked', false);
+    // });
+    $("#reset").click(function(event){
+        event.preventDefault();
+        $( 'input[type="checkbox"]' ).prop('checked', false);
+    });
+
 });

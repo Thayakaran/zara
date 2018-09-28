@@ -51,130 +51,148 @@
         </div>
         <div class="x_content">
           <br />
-          <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+          <form id="filterForm" data-parsley-validate class="form-horizontal form-label-left">
 
-            <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
-                <div style="color: black;" class="form-group">
-                    <h3><b>Collection <small>most common</small></b></h3>
+            <div class="form-group">
+                <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
+                    <div style="color: black;" class="form-group">
+                        <h3><b>Collection <small>most common</small></b></h3>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input style="background: black" type="checkbox" class="flat"> Woman
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> TRF
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> Man  
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> Kids
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> Sales  
+                        </label>    
+                    </div>
                 </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input style="background: black" type="checkbox" class="flat"> Woman
-                  </label>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
+                    <div style="color: black;" class="form-group">
+                        <h3><b>Size <small>standard sizes</small></b></h3>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input style="background: black" type="checkbox" class="flat"> XS
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> S
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> M  
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> L
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> XL  
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> XXL  
+                        </label>    
+                    </div>
                 </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> TRF
-                  </label>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
+                    <div style="color: black;" class="form-group">
+                        <h3><b>Colours <small>most related</small></b></h3>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input style="background: black" type="checkbox" class="flat"> Black
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> Blue
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> Brown
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                      <label>
+                        <input type="checkbox" class="flat"> Green
+                      </label>
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat"> Gray 
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat" value="0"> Orange  
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat" value="0"> Pink 
+                        </label>    
+                    </div>
+                    <div style="color: black" class="checkbox">
+                        <label> 
+                            <input type="checkbox" class="flat" value="0"> Red  
+                        </label>    
+                    </div>
                 </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Man  
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Kids
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Sales  
-                    </label>    
+                <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
+                    <div style="color: black;" class="form-group">
+                        <h3><b>Price <small>range around</small></b></h3>
+                    </div>
+                    <div class="row grid_slider">
+
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p>Default grid slider with min and max values</p>
+                            <input type="text" id="range" value="" name="range" />
+                          </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
-                <div style="color: black;" class="form-group">
-                    <h3><b>Size <small>standard sizes</small></b></h3>
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input style="background: black" type="checkbox" class="flat"> XS
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> S
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> M  
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> L
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> XL  
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> XXL  
-                    </label>    
-                </div>
-            </div>
+            <div class="ln_solid"></div>
 
-            <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
-                <div style="color: black;" class="form-group">
-                    <h3><b>Colours <small>most related</small></b></h3>
+            <div class="form-group">
+                <div class="col-md-8 col-sm-8 col-xs-12 form-group" >
                 </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input style="background: black" type="checkbox" class="flat"> Black
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Blue
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Brown
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                  <label>
-                    <input type="checkbox" class="flat"> Green
-                  </label>
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Gray 
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Orange  
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Pink 
-                    </label>    
-                </div>
-                <div style="color: black" class="checkbox">
-                    <label> 
-                        <input type="checkbox" class="flat"> Red  
-                    </label>    
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12 form-group" >
-                <div style="color: black;" class="form-group">
-                    <h3><b>Price <small>range around</small></b></h3>
-                </div>
-                <div class="row grid_slider">
-
-                      <div class="col-md-12 col-sm-12 col-xs-12">
-                        <p>Default grid slider with min and max values</p>
-                        <input type="text" id="range" value="" name="range" />
-                      </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 form-group" >
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="col-md-6 col-sm-6 col-xs-12 form-group">
+                            <button type="reset" id="reset" class="btn btn-primary" style="background: black;">Refresh</button>
+                    </div>
+                    <div style=" display: flex; align-items: center; justify-content: center;" class="col-md-6 col-sm-6 col-xs-12 form-group">
+                            <button type="submit" class="btn btn-primary" style="background: black;">Apply Filters</button>
+                    </div>
+                    
                 </div>
             </div>
             
