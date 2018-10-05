@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     $("#logout1, #logout2").click(function () {
         localStorage.clear();
-        location.href = "/frontend/login.html";
+        location.href = "/frontend/login_edit.html";
     });
 
        

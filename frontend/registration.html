@@ -65,74 +65,71 @@
                                         <h4>Contact Details</h4>
 
                                         <div class="flat">
-                                                <span style="float: left; margin-left: 20px; margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Personal" class="flat"> Personal</span>
-                                                <span style="margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Busines" class="flat"> Busines</span>
-                                                
-                                            </div>
+                                            <span style="float: left; margin-left: 20px; margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Personal" class="flat"> Personal</span>
+                                            <span style="margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Busines" class="flat"> Busines</span>
+                                        </div>
 											
-											 <div class="form-group">
-                                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                    <input type="text" required="required" class="form-control has-feedback-left" id="company" placeholder="Company">
-                                                    <span class="fa fa-institution form-control-feedback left" aria-hidden="true" id = "com"></span>
-                                                </div>
+										<div class="form-group">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback" id="company">
+                                                <input type="text" required="required" class="form-control has-feedback-left"  placeholder="Company">
+                                                <span class="fa fa-institution form-control-feedback left" aria-hidden="true" ></span>
                                             </div>
+                                        </div>
 
-                                            <div class="form-group">
-                                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                                    <input type="text" required="required" class="form-control has-feedback-left" id="name" placeholder="Name">
-                                                    <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
-                                                </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" required="required" class="form-control has-feedback-left" id="name" placeholder="Name">
+                                                <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                                             </div>
+                                        </div>
 
-                            
+                                        <div class="form-group">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" required="required" class="form-control has-feedback-left" id="address" placeholder=" Address">
+                                                <span class="fa fa-home form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
     
-                            <div class="form-group">
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                    <input type="text" required="required" class="form-control has-feedback-left" id="address" placeholder=" Address">
-                                    <span class="fa fa-home form-control-feedback left" aria-hidden="true"></span>
-                                </div>
-                            </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <select class="form-control has-feedback-left" id="country" required="required">
+                                                    <option value="">Select Country</option>
+                                                    <option value="SriLanka">Sri Lanka</option>
+                                                    <option value="India">India</option>
+                                                    <option value="Australia">Australia</option>
+                                                    <option value="America">America</option>
+                                                    <option value="Swiss">Swiss</option>
+                                                    <option value="Germany">Germany</option>
+                                                </select>
+                                                <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                        
+                                        
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="email" required="required" class="form-control has-feedback-left" id="zip" placeholder="Zip Cord">
+                                                <span class="fa fa-flag form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
     
-                            <div class="form-group">
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                    <select class="form-control has-feedback-left" id="country" required="required">
-                                        <option value="">Select Country</option>
-                                        <option value="SriLanka">Sri Lanka</option>
-                                        <option value="India">India</option>
-                                        <option value="Australia">Australia</option>
-                                        <option value="America">America</option>
-                                        <option value="Swiss">Swiss</option>
-                                        <option value="Germany">Germany</option>
-                                    </select>
-                                    <span class="fa fa-map-marker form-control-feedback left" aria-hidden="true"></span>
-                                </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                <input type="text" class="form-control has-feedback-left" id="phone"  placeholder="Phone">
+                                                <span class="fa fa-mobile form-control-feedback left" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="ln_solid"></div>
+    
+                                        <div class="form-group">
+                                            <div  class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <button style=" width: 100px" class="btn btn-primary" type="reset">Reset</button>
+                                            </div>
+                                        
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                                <button id="register" style=" width: 150px"  type="submit" class="btn btn-success">Create Account</button>
+                                            </div>
+                                        </div>
 
-                               
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                    <input type="email" required="required" class="form-control has-feedback-left" id="zip" placeholder="Zip Cord">
-                                    <span class="fa fa-flag form-control-feedback left" aria-hidden="true"></span>
-                                </div>
-                            </div>
-    
-                            <div class="form-group">
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                    <input type="text" class="form-control has-feedback-left" id="phone"  placeholder="Phone">
-                                    <span class="fa fa-mobile form-control-feedback left" aria-hidden="true"></span>
-                                </div>
-                            </div>
-    
-                            <div class="ln_solid"></div>
-    
-                            <div class="form-group">
-                                <div  class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <button style=" width: 100px" class="btn btn-primary" type="reset">Reset</button>
-                                </div>
-    
-                                <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <button onclick="location.href='/frontend/home.html'" style=" width: 150px"  type="submit" class="btn btn-success">Create Account</button>
-                                </div>
-                            </div>
-    
                         </form>
                     </div>
                 </div>
@@ -151,7 +148,6 @@
 $(document).ready(function(){
 
 	$('#company').hide();
-	$('#com').hide();
 	
 	
 	
@@ -161,7 +157,6 @@ $(document).ready(function(){
     }
 	else 
 	$('#company').hide();
-	$('#com').hide();
 		
   });
 
