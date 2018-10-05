@@ -38,7 +38,7 @@
             
                 <div class="x_content">
                         <br />
-                        <form  class="form-horizontal form-label-left input_mask" >
+                        <form data-parsley-validate class="form-horizontal form-label-left input_mask" >
 
                                 <h1>Register with ZARA</h1>
                                 <h4>Account Details</h4>
@@ -66,16 +66,25 @@
 
                                         <div class="flat">
                                                 <span style="float: left; margin-left: 20px; margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Personal" class="flat"> Personal</span>
-                                                <span style="margin-bottom: 2px;"><input id="opco" type="radio" name="user" value="Busines" class="flat"> Busines</span>
+                                                <span style="margin-bottom: 2px;"><input id="opst" type="radio" name="user" value="Busines" class="flat"> Busines</span>
                                                 
                                             </div>
+											
+											 <div class="form-group">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                    <input type="text" required="required" class="form-control has-feedback-left" id="company" placeholder="Company">
+                                                    <span class="fa fa-institution form-control-feedback left" aria-hidden="true" id = "com"></span>
+                                                </div>
+                                            </div>
 
-                            <div class="form-group">
-                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-                                    <input type="text" required="required" class="form-control has-feedback-left" id="name" placeholder="Name">
-                                    <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
-                                </div>
-                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                    <input type="text" required="required" class="form-control has-feedback-left" id="name" placeholder="Name">
+                                                    <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+
+                            
     
                             <div class="form-group">
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
@@ -120,7 +129,7 @@
                                 </div>
     
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                    <button onclick="location.href='/frontend/login.html'" style=" width: 150px"  type="submit" class="btn btn-success">Create Account</button>
+                                    <button onclick="location.href='/frontend/home.html'" style=" width: 150px"  type="submit" class="btn btn-success">Create Account</button>
                                 </div>
                             </div>
     
@@ -137,6 +146,28 @@
 </div>
 
 <script src="build/js/register.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$('#company').hide();
+	$('#com').hide();
+	
+	
+	
+	$("input[name='user']").change(function(){
+    if ($(this).val() == 'Busines') {
+      $('#company').show();
+    }
+	else 
+	$('#company').hide();
+	$('#com').hide();
+		
+  });
+
+
+})
+</script>
 
 </body>
 
