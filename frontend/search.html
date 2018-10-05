@@ -49,7 +49,7 @@
                     </div>
                     <div class="profile_info">
                         <span>Welcome,</span>
-                        <h2>John Doe</h2>
+                        <h2><div id="userwelcome"></div></h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
@@ -60,7 +60,8 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <h3>Categories</h3>
-                        <ul class="nav side-menu">                            
+                        <ul class="nav side-menu"> 
+                            <li><a href="/"><i class="fa fa-angle-double-up"></i> Home <span class="fa fa-chevron-right"></span></a></li>                           
                             <li id="woman-category"><a><i class="fa fa-female"></i> WOMAN <span class="fa fa-chevron-right"></span></a></li>
                             <li id="man-category"><a><i class="fa fa-male"></i> MAN <span class="fa fa-chevron-right"></span></a></li>
                             <li id="kids-category"><a><i class="fa fa-child"></i> KIDS <span class="fa fa-chevron-right"></span></a></li>
@@ -101,7 +102,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="/frontend/production/images/img.jpg" alt="">John Doe
+                                <img src="/frontend/production/images/img.jpg" alt=""><span id="username"></span>
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -204,12 +205,12 @@
               
               <div class="col-md-10 col-sm-10 col-xs-12 form-group top_search">
                 <div class="input-group" >
-                  <input style=" height: 70px; width: 950px; font-size:40px;" type="text" id="searchTxt" class="form-control" placeholder="Search for..." autofocus>
+                  <input style=" height: 70px; width: 100%; font-size:40px;" type="text" id="searchTxt" class="form-control" placeholder="Search for..." autofocus>
                   <span class="input-group-btn"><button style=" height: 70px; width: 100px; font-size:40px;" class="btn btn-default" type="button" id="searchBtn"><span class="fa fa-search"></span></button></span>
                 </div>
               </div>
               <div class="col-md-2 col-sm-2 col-xs-12">
-                  <button style=" height: 70px; width: 200px; font-size:30px;" type="button" id="filterBtn" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
+                  <button style=" height: 70px; width: 100%; font-size:30px;" type="button" id="filterBtn" class="btn btn-round btn-default"><b>FILTERS  </b><span class="fa fa-filter"></span></button>
               </div>
             </div>
             <!-- /searchand filter -->            
