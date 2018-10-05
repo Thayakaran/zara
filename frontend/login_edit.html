@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
-  <title>Gentelella Alela! | </title>
+  <title>ZARA | Login </title>
 
   <!-- Bootstrap -->
   <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,64 +37,92 @@
 
 
 
-<body>
+<body class="login">
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
 
-<!-- page content -->
-<div class="container body">
-  <div class="main_container">
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+            
+                <div class="x_content" style="width: 100%>
+                     
+                        <form  class="form-horizontal form-label-left input_mask"  >
 
+                                <h1>Login to  ZARA</h1>
+                                <h4>Enter your account details!!</h4>
+    
+										
+						<div >
+					
+                        
+                        <br/>
+											  
+                                <div class="form-group" style ="margin-bottom:75px">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                            <input type="text" required="required" class="form-control has-feedback-left" id="email" placeholder="Email">
+                                            <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
 
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <center>
-          <div class="x_panel" style="width: 50%">
-            <div class="x_title">
-              <h2>Hi!! Welcome to ZARA </h2>
-              <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
+                                    <div class="form-group" style ="margin-bottom:100px">
+                                           
+                                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                                                    
+                                                <input type="password" required="required" class="form-control has-feedback-left" id="password" placeholder="Password">
+                                                <span class="fa fa-lock form-control-feedback left" aria-hidden="true"></span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+    
+    
+                         
 
-              <!-- start form for validation -->
-              <form id="demo-form" data-parsley-validate>
-                
-                <input type="text" class="form-control" id="username" placeholder="Username">
-
-                <br />
-                <input type="password" class="form-control" id="password" placeholder="Password">
-
-
-                <br />
-                <div style="width: 50%">
-                  <a class="btn btn-primary" id="login"><i class="fa fa-unlock"></i>Log in</a>
-
-                </div>
-
-                <div>
-                  <a href="forgrtpassword.html"> Forget Password?</a><br />
+							  <br />
+							    <br />
+								  <br />
+							    
+					
+				
+				<div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                    <button onclick="location.href='/frontend/login.html'" style=" width: 150px"  type="submit" class="btn btn-success"><i class="fa fa-unlock"></i> Login</button>
+                                </div>
+    
+                                            <div>
+                  <a href="forgetPassword.html"> Forget Password?</a><br />
                   <a href="registration.html"> New To ZARA?</a>
                 </div>
                 <br />
+				<div style="width: 100%" >
                 <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-facebook"></i>
                   Sign in with Facebook </a><br />
-                <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-twitter"></i>
+               
+
+				</div>
+				
+				<div style="width: 100% " >
+					 <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-twitter"></i>
                   Sign in with Twitter </a>
-
-              </form>
-
+				
+				</div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-        </center>
+
+            </section>
+        </div>
 
 
-      </div>
     </div>
-  </div>
 </div>
 
+<script src="build/js/register.js"></script>
 
-</div>
-</div>
-<!-- /page content -->
+
+
 
 
 
