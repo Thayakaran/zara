@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: HDtOZoEQTlpUnGUbtsDOZliR8KSdnyfwsfwS95+CMnf3O52jrDzOssABDHhBob1hZEcjAvHyHsoRwYOThu5L8u0Fnenk5wyd0fPhbdLj17sI7qNt0ymRDIgv5nRW0Lv1i228rv+jh7flribXw23pQdJcRa6CVhtKs0VPpnK6H3ZJrK3Q5RWxz9IQMILrBbQoKULX6YwvD1kbgeyMBhcysccyQ9dJIjsyUHauMof4IwjvNEJfeA7YpuGTFidLn4d2uA7WkuHewBckcnb/bN3ei6lu+nO4eUjYdqOsDjV01CQFM4HUNJoGZoaPow1T9We0/IsGMF81tnctZSQ9n1k02MqCCrGN99WLm4dwRcAv+A15Ti5bMhiNA6R4k0S7qEQD1EtsFx7eTqjNuT+DXLBvEVBuqIV1r/X7FCnZKvnfKSJp3rGb2A6+43g/QStMzRyG3DjaeO1/mF9kmVsEg6JKSF93aBf1apcJRa7cY1/IRb0+GlqD5wpD2CD+KlxeZGlE4QBzSn8kp9AK41nIUJO5z2smOk5yMWRW3i6a6px1tN39oZztVEPorkKtWqA6rpRG/uoggp+CnfN5NSWZ2oPS8xhT3RTRyDSCIPgR28tywEI4Yr/2MLLl1ahXkiUQq37yorkp2luHwLt59EIFsdpaLH/8bf5vZVTZsFG5hbE1R9U=
+  app:
+    master: sliit-uee
